@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://documentation.blackduck.com/category/api
+docs: https://documentation.blackduck.com/bundle/bd-hub/page/SDK/Using_the_Hub_SDK.html
+summary:
+  types: [apiKey, http]
+  api_key_in: [header]
+  http_schemes: [bearer]
+  oauth2_flows: []
+schemes:
+- name: ApiToken
+  type: apiKey
+  in: header
+  parameter: Authorization
+  description: >
+    A user generates a long-lived API token in the Black Duck UI (My Access Tokens). The token is
+    exchanged for a short-lived bearer token by POSTing to /api/tokens/authenticate with an
+    "Authorization: token <API_TOKEN>" header.
+  sources: [https://documentation.blackduck.com/category/api]
+- name: BearerAuth
+  type: http
+  scheme: bearer
+  description: >
+    Authenticated API calls pass the short-lived bearer token (returned by the authenticate call)
+    as "Authorization: Bearer <token>". Tokens expire and must be refreshed.
+  sources: [https://documentation.blackduck.com/category/api]
+notes: >
+  The Black Duck Hub REST API is per-tenant (each customer runs its own hub instance), so there is
+  no single public base URL. Auth is token-based: an API token minted in the UI is authenticated to
+  obtain a time-limited bearer token used on subsequent calls. Requests also require Black Duck's
+  custom versioned media types in Accept/Content-Type headers.

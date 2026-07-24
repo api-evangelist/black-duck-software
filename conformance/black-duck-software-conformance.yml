@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.blackduck.com/company/legal/security-commitments.html
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: SOC 2 Type 2 (security, availability, confidentiality) on Security Commitments page
+- id: soc3-type2
+  conforms: true
+  evidence: SOC 3 Type 2 report published
+- id: iso-27001
+  conforms: true
+  evidence: ISO 27001 certification
+- id: iso-27017
+  conforms: true
+  evidence: ISO 27017 certification
+- id: iso-26262
+  conforms: true
+  evidence: ISO 26262 functional-safety certification
+- id: csa-star
+  conforms: true
+  evidence: CSA STAR self-assessment (CAIQ)
+- id: tisax
+  conforms: true
+  evidence: TISAX Level 2 (valid until 2028-02-17)
+- id: tx-ramp
+  conforms: true
+  evidence: TX-RAMP Level 2 (Polaris)
+- id: iso-29147
+  conforms: true
+  evidence: PSIRT vulnerability disclosure process based on ISO 29147
+- id: iso-30111
+  conforms: true
+  evidence: PSIRT vulnerability handling process based on ISO 30111
+- id: oauth2
+  conforms: false
+  evidence: API uses API-token-to-bearer auth, not OAuth2
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: error envelope is custom (errorMessage/errors), not application/problem+json

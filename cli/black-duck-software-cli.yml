@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/blackducksoftware/detect
+name: Detect
+binary: detect
+docs: https://documentation.blackduck.com/bundle/detect/page/introduction.html
+repository: https://github.com/blackducksoftware/detect
+description: >
+  Detect is Black Duck's command-line scanner and orchestrator. It inspects a project, runs the
+  appropriate detectors (package managers, binary/signature/snippet scanning), and uploads results
+  to a Black Duck (SCA/Hub) or Polaris server for open-source, license, and vulnerability analysis.
+install:
+- method: shell (bash)
+  command: 'bash <(curl -s -L https://detect.blackduck.com/detect10.sh)'
+- method: powershell
+  command: 'powershell "[Net.ServicePointManager]::SecurityProtocol = ''tls12''; irm https://detect.blackduck.com/detect10.ps1?$(Get-Random) | iex; detect"'
+key_flags:
+- flag: --blackduck.url
+  purpose: Target Black Duck server URL
+- flag: --blackduck.api.token
+  purpose: API token for authentication
+- flag: --detect.project.name
+  purpose: Project name to map the scan to
+- flag: --detect.tools
+  purpose: Select which detectors/tools to run (DETECTOR, SIGNATURE_SCAN, BINARY_SCAN, ...)
+- flag: --detect.source.path
+  purpose: Path to the source/project to scan
+flows:
+- Dependency (package-manager) scan and BOM upload
+- Signature (filesystem) scanning
+- Binary scanning
+- Snippet scanning
+notes: >
+  The Detect binary is also catalogued in packages/black-duck-software-packages.yml. Related CLI
+  tooling includes blackduck-c-cpp for C/C++ build capture.

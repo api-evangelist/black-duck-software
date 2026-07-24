@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://documentation.blackduck.com/
+versioning:
+  scheme: media-type
+  detail: Versioned via custom vnd.blackducksoftware.* media types in Accept/Content-Type headers.
+  docs: https://documentation.blackduck.com/category/api
+deprecation:
+  policy: >
+    Black Duck documents supported vs unsupported/deprecated APIs in the REST API Developers Guide;
+    only APIs documented in the official guide are supported, and undocumented endpoints may change
+    or be removed without notice.
+  docs: https://documentation.blackduck.com/category/api
+release_cadence:
+  scheme: calendar-versioned SaaS/on-prem releases (e.g. 2024.x, 2026.x)
+  docs: https://documentation.blackduck.com/
+status_page: https://status.blackduck.com/
+notes: >
+  Black Duck ships calendar-versioned product releases (Black Duck SCA / Hub, Polaris) with per-release
+  documentation bundles and release notes. A public status page is available at status.blackduck.com.

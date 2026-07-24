@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+probe: false
+url: https://www.blackduck.com/company/legal/security-commitments.html
+certifications:
+- SOC 2 Type 2
+- SOC 3 Type 2
+- ISO 27001
+- ISO 27017
+- ISO 26262
+- CSA STAR (Self-Assessment / CAIQ)
+- TISAX Level 2
+- TX-RAMP Level 2
+policy_frameworks:
+- ISO 27001
+- ISO 27002
+- NIST SP 800-53
+- NIST CSF
+assessments:
+- Product-on-product (PoP) testing of each release with Black Duck SCA and Coverity
+- Internal penetration tests, code reviews, and architectural risk assessments for major features
+- Threat modeling for major releases
+notes: >
+  Black Duck publishes its security posture and compliance certifications on its Security
+  Commitments page. TX-RAMP Level 2 covers the Polaris platform; TISAX Level 2 is valid
+  through 2028-02-17. No PCI DSS, HIPAA, FedRAMP, or GDPR certification is claimed on the page.
+evidence:
+- source: https://www.blackduck.com/company/legal/security-commitments.html
+  keywords: [soc 2, soc 3, iso 27001, iso 27017, csa star, tisax, tx-ramp, security commitments]

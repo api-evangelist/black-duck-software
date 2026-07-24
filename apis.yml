@@ -1,21 +1,46 @@
 aid: black-duck-software
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/black-duck-software.png
 name: Black Duck Software
-description: 'Black Duck Software is a company surfaced as a portfolio company of sapphire-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Black Duck Software is an independent application security company (formerly the Synopsys
+  Software Integrity Group, spun out in October 2024 and backed by Clearlake Capital and Francisco Partners).
+  Its portfolio spans Software Composition Analysis (Black Duck SCA), static analysis (Coverity), dynamic
+  and interactive testing, fuzzing, and the Polaris SaaS platform, helping organizations find and fix
+  open-source, license, and security risk across the SDLC. Black Duck exposes a versioned REST API (custom
+  media types, bearer-token / API-token auth, HAL-style hypermedia), native CI/CD plug-ins, the Detect
+  command-line scanner, webhooks, and an official MCP server (Black Duck Signal) for AI coding assistants.'
 url: https://raw.githubusercontent.com/api-evangelist/black-duck-software/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sapphire-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Security
+- Application Security
+- Software Composition Analysis
+- Open Source Security
+- Static Analysis
+- DevSecOps
+- Vulnerability Management
+- SAST
+- SCA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +49,63 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.blackducksoftware.com/
+  url: https://www.blackduck.com/
+- type: DeveloperPortal
+  url: https://docs.blackduck.com/
+- type: Documentation
+  url: https://docs.blackduck.com/
+- type: APIReference
+  url: https://documentation.blackduck.com/category/api
+- type: GettingStarted
+  url: https://documentation.blackduck.com/bundle/bd-hub/page/SDK/Using_the_Hub_SDK.html
+- type: Blog
+  url: https://www.blackduck.com/blog.html
+- type: Support
+  url: https://community.blackduck.com/s/
+- type: GitHubOrganization
+  url: https://github.com/blackducksoftware
+- type: PrivacyPolicy
+  url: https://www.blackduck.com/company/legal/privacy-policy.html
+- type: TermsOfService
+  url: https://www.blackduck.com/company/legal/terms-of-use.html
+- type: StatusPage
+  url: https://status.blackduck.com/
+- type: Compliance
+  url: https://www.blackduck.com/company/legal/security-commitments.html
+- type: TrustCenter
+  url: security/black-duck-software-trust-center.yml
+- type: Security
+  url: https://www.blackduck.com/company/legal/vulnerability-disclosure-policy.html
+- type: VulnerabilityDisclosure
+  url: security/black-duck-software-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/black-duck-software-domain-security.yml
+- type: Conformance
+  url: conformance/black-duck-software-conformance.yml
+- type: Packages
+  url: packages/black-duck-software-packages.yml
+- type: SDKs
+  url: packages/black-duck-software-packages.yml
+- type: CLI
+  url: cli/black-duck-software-cli.yml
+- type: Authentication
+  url: authentication/black-duck-software-authentication.yml
+- type: Conventions
+  url: conventions/black-duck-software-conventions.yml
+- type: Lifecycle
+  url: lifecycle/black-duck-software-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/black-duck-software-lifecycle.yml
+- type: ChangeLog
+  url: changelog/black-duck-software-changelog.yml
+- type: MCPServer
+  url: mcp/black-duck-software-mcp.yml
+- type: LLMsTxt
+  url: llms/black-duck-software-llms.txt
+- type: WellKnown
+  url: well-known/black-duck-software-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

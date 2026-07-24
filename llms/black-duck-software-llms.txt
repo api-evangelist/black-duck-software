@@ -1,0 +1,35 @@
+# Black Duck Software
+
+> Black Duck Software is an independent application security company (formerly the Synopsys Software Integrity Group, spun out October 2024, backed by Clearlake Capital and Francisco Partners). Its products span Software Composition Analysis (Black Duck SCA), static analysis (Coverity), dynamic/interactive testing, fuzzing, and the Polaris SaaS platform. Black Duck exposes a versioned REST API, the Detect CLI scanner, CI/CD plug-ins, webhooks, and an official MCP server (Black Duck Signal).
+
+## APIs
+
+- [Black Duck Hub REST API](https://documentation.blackduck.com/category/api): Per-tenant REST API over your Black Duck server; custom versioned media types, API-token-to-bearer auth, HAL-style hypermedia.
+- [Getting Started with the API (Hub SDK)](https://documentation.blackduck.com/bundle/bd-hub/page/SDK/Using_the_Hub_SDK.html): How to mint an API token, authenticate, and call the REST API.
+
+## Docs
+
+- [Documentation Portal](https://docs.blackduck.com/): Product documentation for SCA, Polaris, Coverity, and Detect.
+- [API Documentation Category](https://documentation.blackduck.com/category/api): REST API developer guides.
+- [Community & Support](https://community.blackduck.com/s/): Knowledge base and support cases.
+- [Blog](https://www.blackduck.com/blog.html): Company and product blog.
+
+## Tools & SDKs
+
+- [Detect (CLI scanner)](https://github.com/blackducksoftware/detect): Command-line scanner/orchestrator for Black Duck SCA.
+- [blackduck (Python)](https://pypi.org/project/blackduck/): Official Python bindings for the Hub REST API.
+- [blackduck-c-cpp (Python)](https://pypi.org/project/blackduck-c-cpp/): C/C++ build-capture scanning tool.
+- [blackduck-common (Java)](https://github.com/blackducksoftware/blackduck-common): Shared Java integration library.
+- [GitHub Organization](https://github.com/blackducksoftware): Official open-source repositories.
+- [Black Duck Signal (MCP)](https://www.blackduck.com/signal-ai-appsec.html): Official MCP server for AI coding assistants.
+
+## Security & Trust
+
+- [Security Commitments / Compliance](https://www.blackduck.com/company/legal/security-commitments.html): SOC 2 Type 2, SOC 3, ISO 27001, ISO 27017, ISO 26262, CSA STAR, TISAX, TX-RAMP.
+- [Vulnerability Disclosure Policy (PSIRT)](https://www.blackduck.com/company/legal/vulnerability-disclosure-policy.html): Report to psirt@blackduck.com (PGP preferred); ISO 29147 / ISO 30111.
+- [Status Page](https://status.blackduck.com/): Service status.
+
+## Legal
+
+- [Privacy Policy](https://www.blackduck.com/company/legal/privacy-policy.html)
+- [Terms of Use](https://www.blackduck.com/company/legal/terms-of-use.html)

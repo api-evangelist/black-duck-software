@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://documentation.blackduck.com/category/api
+authentication:
+  style: bearer-token
+  detail: API token authenticated to a short-lived bearer token; see authentication/black-duck-software-authentication.yml
+versioning:
+  style: media-type
+  detail: >
+    The API is versioned through custom media types supplied in the Accept and Content-Type
+    headers (e.g. application/vnd.blackducksoftware.<domain>-<version>+json), which pins a stable,
+    versioned response shape per resource.
+media_types:
+  scheme: vnd.blackducksoftware.*
+  example: application/vnd.blackducksoftware.user-4+json
+hypermedia:
+  style: HAL-like
+  detail: >
+    Responses embed a _meta object carrying hypermedia links (_meta.links[] with rel + href) and
+    allow relations, enabling HATEOAS-style navigation between resources.
+pagination:
+  style: offset-limit
+  params: [offset, limit]
+  response_fields: [totalCount, items]
+  detail: Collection endpoints return { totalCount, items[] } and page via offset and limit query params.
+idempotency:
+  supported: false
+  detail: Black Duck does not document a client idempotency-key mechanism.
+error_envelope:
+  detail: >
+    Errors return an HTTP status with a JSON body carrying an errorMessage / errors[] structure;
+    see errors handling in the REST API developers guide.
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/black-duck-software-authentication.yml
+  lifecycle: lifecycle/black-duck-software-lifecycle.yml
+notes: >
+  Cross-cutting semantics for the Black Duck Hub REST API, captured from the public documentation
+  portal. No client-supplied idempotency key is documented, so no Idempotency pointer is emitted.

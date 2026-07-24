@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://documentation.blackduck.com/
+scheme: calendar
+detail: >
+  Black Duck publishes per-product, per-release notes in its documentation portal rather than a
+  single unified changelog. Each product (Black Duck SCA/Hub, Polaris, Coverity, Detect) ships
+  dated release notes in its own documentation bundle.
+release_notes:
+- product: Black Duck SCA / Hub
+  url: https://documentation.blackduck.com/
+- product: Detect
+  url: https://documentation.blackduck.com/bundle/detect/page/releasenotes.html
+- product: Polaris
+  url: https://documentation.blackduck.com/
+entries: []
+notes: >
+  Entries left empty: release notes are gated per product/version bundle and not exposed as a single
+  dated feed. This pointer records where the authoritative release notes live.

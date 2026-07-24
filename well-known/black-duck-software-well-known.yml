@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/ on Black Duck public hosts
+hosts:
+- host: https://www.blackduck.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.blackduck.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    valid: false
+    note: returns the docs-portal HTML SPA (text/html), not a valid RFC 9116 document
+  - path: /.well-known/openid-configuration
+    status: 200
+    valid: false
+    note: returns HTML SPA, not a valid OIDC discovery document
+  - path: /.well-known/api-catalog
+    status: 200
+    valid: false
+    note: returns HTML SPA, not a valid RFC 9727 api-catalog
+notes: >
+  No valid /.well-known/ discovery documents were found. The docs host returns HTTP 200 for every
+  path via a catch-all SPA, so those 200s are not real documents. Absence recorded as valid data.

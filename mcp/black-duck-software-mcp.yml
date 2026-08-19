@@ -10,16 +10,23 @@ server:
   - Claude Code
   - Google Gemini
   - GitHub Copilot
-description: >
-  Black Duck Signal connects with popular AI coding assistants (Claude Code, Google Gemini, GitHub
-  Copilot) via the Model Context Protocol so developers can run Black Duck security scans and query
+description: 'Black Duck Signal connects with popular AI coding assistants (Claude Code, Google Gemini,
+  GitHub Copilot) via the Model Context Protocol so developers can run Black Duck security scans and query
   SCA/KnowledgeBase results directly inside AI-driven coding workflows.
+
+  '
 capabilities:
 - Search open-source components and list versions
 - Retrieve CVE / BDSA vulnerability details for a component version
 - Identify recommended secure upgrade paths
 - Run vulnerability analysis directly from an AI coding assistant
-notes: >
-  Official MCP server delivered as part of the Black Duck Signal product. Setup and installation
-  details are published in the Black Duck documentation portal; this is not a standalone public
-  endpoint but an MCP integration wired into Signal.
+notes: 'Official MCP server delivered as part of the Black Duck Signal product. Setup and installation
+  details are published in the Black Duck documentation portal; this is not a standalone public endpoint
+  but an MCP integration wired into Signal.
+
+  '
+deployment:
+  mode: local-stdio
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
